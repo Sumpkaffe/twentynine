@@ -1,0 +1,17 @@
+header{
+    grid-area: hd;
+    display: flex;
+    height: 15vh;
+    margin: 25px;
+    align-items: left;
+}
+
+main{
+    grid-area: mn;
+    display: flex;
+    background-image: url(/img/utsida\ placeholder.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 60vh;
+    width: 100vw;
+}
