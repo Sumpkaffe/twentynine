@@ -4,12 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="javascript" href="/js/hamburger.js">
     <title>Mariaplans bokhandel</title>
 </head>
 <body>
+   <div id="wrapper">
     <header>
         <a href="main.html"><img src="/img/ugglan logga.jpg" style="width: fr; height: 15vh;"></a>
-        <h1>Mariaplans Bokhandel</h1>
+        <h1>Mariaplans</h1> <h1>Bokhandel</h1>
+        <div class="topnav">
+            <a href="#home" class="active"><img src="/img/menyknapp.webp" alt=""></a>
+            <div id="myLinks">
+              <a href="#historia.html">Historia</a>
+              <a href="#kontakt.html">Kontakt</a>
+              <a href="#sortiment.html">Sortiment</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
     </header>
     
     <main>
@@ -27,7 +40,7 @@
    
     <div id="nyheter">
         <h2>Nyheter</h2>
-        <div id="nyhetsblad">
+        <!--<div id="nyhetsblad">
             <img src="/img/bokrea.jpg" alt="">
             <p>weoeow kolla de är bokrea på de här stället</p>
         </div>
@@ -38,7 +51,7 @@
         <div id="nyhetsblad">
             <img src="/img/bokrea.jpg" alt="">
             <p>weoeow kolla de är bokrea på de här stället</p>
-        </div>
+        </div>-->
     </div>
 
     <div id="arbetare">
@@ -52,5 +65,6 @@
         Hitta hit:
         copyrightinfo eller nåt idk
     </footer>
+  </div>
 </body>
 </html>
