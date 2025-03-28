@@ -8,7 +8,7 @@ body{
     #wrapper{
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 18vh 50vh 35vh 50vh 65vh 20vh;
+        grid-template-rows: 15vh 50vh 35vh 50vh 65vh 20vh;
         width: 100%;
         grid-template-areas: 
         'hd'
@@ -21,25 +21,34 @@ body{
 }
 
   h1{
-    font-size: 33px;
+    font-size: 22px;
   }
 
+  .maintext{
+    background-color: thistle;
+    border-radius: 20px;
+    padding: 10px; 
+    align-items: center;
+  }
     header{
         grid-area: hd;
         display: flex;
-        gap: 30px;
-        margin: 0px;
-        align-items: left;
-        background-color: chartreuse;
+        align-items: center;
+        justify-content: space-evenly;
     }
 
     main{
         grid-area: mn;
-        display: grid;
+        display: flex;
         background-image: url(/img/utsida\ placeholder.jpg);
         background-repeat: no-repeat;
         background-size: 100%;
-}
+        justify-content: right;
+        padding-left: 80px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
     section{
         grid-area: sc;
         display: grid;
