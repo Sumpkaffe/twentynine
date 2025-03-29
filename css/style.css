@@ -3,20 +3,19 @@ body{
 }
 
 
-
 @media screen and (max-width: 500px) {
     #wrapper{
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: 50% 50%;
         grid-template-rows: 15vh 50vh 35vh 50vh 65vh 20vh;
         width: 100%;
         grid-template-areas: 
-        'hd'
-        'mn'
-        'sc'
-        'nh'
-        'ar'
-        'ft'
+        'hd hd'
+        'mn mn'
+        'sm sm'
+        'nh nh'
+        'ar ar'
+        'ft ft'
         ;
 }
 
@@ -25,11 +24,23 @@ body{
   }
 
   .maintext{
-    background-color: thistle;
+    background-color: floralwhite;
     border-radius: 20px;
     padding: 10px; 
     align-items: center;
+    opacity: .8;
   }
+  .knapp{
+    grid-area: kn;
+    display: flex;
+    background-color: firebrick;
+    margin: 2.5vw;
+    border-radius: 10px;
+    height: 26%;
+    width: 45vw; 
+  }
+  
+
     header{
         grid-area: hd;
         display: flex;
@@ -49,21 +60,19 @@ body{
         padding-bottom: 50px;
     }
 
-    section{
-        grid-area: sc;
+    
+    #sortiment_meny{
+        grid-area: sm;
         display: grid;
         background-color: chocolate;
-    }
-
-    .knapp{
-      display: flex;
-      padding: 10px;
-    }
+        align-content: space-evenly;
+      }
 
     #nyheter{
         grid-area: nh;
         display: grid;
         background-color: red;
+        
     }
 
     #arbetare{
