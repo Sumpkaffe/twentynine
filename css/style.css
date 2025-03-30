@@ -1,18 +1,27 @@
+:root{
+  --basic: #b8141f;
+  --dark: #9A1119;
+}
 body{
   margin: 0px;
 }
 
+.dm-mono-light {
+  font-family: "DM Mono", monospace;
+  font-weight: 300;
+  font-style: normal;
+}
 
 @media screen and (max-width: 500px) {
     #wrapper{
         display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 15vh 50vh 35vh 50vh 65vh 20vh;
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: 15vh auto 35vh 50vh 65vh 20vh;
         width: 100%;
         grid-template-areas: 
         'hd hd'
         'mn mn'
-        'sm sm'
+        'sm sm2'
         'nh nh'
         'ar ar'
         'ft ft'
@@ -20,7 +29,22 @@ body{
 }
 
   h1{
-    font-size: 22px;
+    font-family: DM Mono;
+    font-size: 24px;
+    color: white;
+    background-color: black;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+  }
+
+  h2{
+    font-family: DM Mono;
+    font-size: 18px;
+    color: black;
+    padding: 3px;
+    padding-left: 10px;
   }
 
   .maintext{
@@ -28,16 +52,18 @@ body{
     border-radius: 20px;
     padding: 10px; 
     align-items: center;
-    opacity: .8;
+    opacity: .7;
   }
   .knapp{
     grid-area: kn;
     display: flex;
-    background-color: firebrick;
-    margin: 2.5vw;
+    color:black;
+    background-color: var(--basic);
+    padding: 15px;
+    margin: 5px;
     border-radius: 10px;
-    height: 26%;
-    width: 45vw; 
+    border-color: var(--dark);
+    justify-content: center;
   }
   
 
@@ -51,20 +77,23 @@ body{
     main{
         grid-area: mn;
         display: flex;
-        background-image: url(/img/utsida\ placeholder.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        justify-content: right;
+        background-image: url(/img/utsida\ färdig.png);
+        background-blend-mode: color;
+        background-size: 100vw;
         padding-left: 80px;
         padding-top: 50px;
         padding-bottom: 50px;
     }
 
-    
     #sortiment_meny{
-        grid-area: sm;
+      grid-area: sm;
+      display: grid;
+      align-content: space-evenly;
+    }
+    
+    #sortiment_meny2{
+        grid-area: sm2;
         display: grid;
-        background-color: chocolate;
         align-content: space-evenly;
       }
 
