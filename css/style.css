@@ -1,6 +1,6 @@
 :root{
   --basic: #b8141f;
-  --dark: #9A1119;
+  --dark: #7d0d14;
 }
 body{
   margin: 0px;
@@ -12,38 +12,28 @@ body{
   font-style: normal;
 }
 
-@media screen and (max-width: 500px) {
-    #wrapper{
-        display: grid;
-        grid-template-columns: 50vw 50vw;
-        grid-template-rows: 15vh auto 35vh 50vh 65vh 20vh;
-        width: 100%;
-        grid-template-areas: 
-        'hd hd'
-        'mn mn'
-        'sm sm2'
-        'nh nh'
-        'ar ar'
-        'ft ft'
-        ;
-}
-
   h1{
     font-family: DM Mono;
     font-size: 24px;
     color: white;
     background-color: black;
-    padding: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
-    
+  }
+  
+  @media screen and (max-width: 380px) {
+    h1{
+      font-family: DM Mono;
+      font-size: 17px;
+      color: white;
+      background-color: black;
+    }
   }
 
   h2{
+    grid-area: h2;
     font-family: DM Mono;
     font-size: 18px;
-    color: black;
-    padding: 3px;
+    color: white;
+    background-color: black;
     padding-left: 10px;
   }
 
@@ -65,53 +55,23 @@ body{
     border-color: var(--dark);
     justify-content: center;
   }
-  
 
+  .left-button-slide{
+    width: 20px;
+    height: 80px;
+    grid-area: lbs;
+  }
+
+  .right-button-slide{
+    width: 20px;
+    height: 80px;
+    grid-area: rbs;
+  }
     header{
         grid-area: hd;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-    }
-
-    main{
-        grid-area: mn;
-        display: flex;
-        background-image: url(/img/utsida\ färdig.png);
-        background-blend-mode: color;
-        background-size: 100vw;
-        padding-left: 80px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
-    #sortiment_meny{
-      grid-area: sm;
-      display: grid;
-      align-content: space-evenly;
-    }
-    
-    #sortiment_meny2{
-        grid-area: sm2;
-        display: grid;
-        align-content: space-evenly;
-      }
-
-    #nyheter{
-        grid-area: nh;
-        display: grid;
-        background-color: red;
-        
-    }
-
-    #arbetare{
-        grid-area: ar;
-        display: grid;
-        background-color: cornflowerblue;
-    }
-
-    .agare{
-      width: 100%;
     }
 
     footer{
@@ -121,13 +81,6 @@ body{
     }
 
 
-    .nyhetsbild{
-      max-height: 70px;
-      max-width: 80px ;
-    }
-
-
-}
 
 /* Style the navigation menu
 .topnav {

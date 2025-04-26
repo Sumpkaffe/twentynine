@@ -1,0 +1,80 @@
+@media screen and (max-width: 500px) {
+    #wrapper{
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: 15vh auto 35vh 50vh 65vh 20vh;
+        width: 100%;
+        grid-template-areas: 
+        'hd hd'
+        'mn mn'
+        'sm sm2'
+        'nh nh'
+        'ar ar'
+        'ft ft'
+        ;
+}
+
+main{
+    grid-area: mn;
+    display: flex;
+    background-image: url(/img/utsida\ färdig.png);
+    background-blend-mode: color;
+    background-size: 100vw;
+    padding-left: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#sortiment_meny{
+  grid-area: sm;
+  display: grid;
+  align-content: space-evenly;
+}
+
+#sortiment_meny2{
+    grid-area: sm2;
+    display: grid;
+    align-content: space-evenly;
+  }
+
+#nyheter{
+    grid-area: nh;
+    display: grid;
+    grid-template-columns: 30px 65px auto 30px;
+    grid-template-rows: 22% auto;
+    grid-template-areas: 
+    'h2 h2 . .'
+    'lbs nb nb rbs' 
+    ;
+    
+}
+
+#arbetare{
+    grid-area: ar;
+    display: grid;
+    background-color: cornflowerblue;
+}
+
+.agare{
+  width: 100%;
+}
+
+#nyhetsblad{
+    display: block;
+    grid-area: nb;
+    justify-self: center;
+  }
+
+  @media screen and (max-width: 380px) {
+  .nyhetsbild{
+    max-height: auto;
+    max-width: 65vw;
+    
+        }
+    }
+.nyhetsbild{
+    max-height: auto;
+    max-width: 230px;
+
+    }
+}
